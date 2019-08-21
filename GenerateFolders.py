@@ -13,7 +13,10 @@ def find(pattern, path):
 				result.append(os.path.join(root, name))
 	return result
 
-basepath = "//192.168.1.2/Music/80/"
+#Track Locations
+basepath = ""
+
+#Track Listing
 f = open(basepath + 'tracks.txt')
 line = f.readline()
 count = 0
