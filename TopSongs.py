@@ -3,8 +3,8 @@ import urllib.request
 import time
 from bs4 import BeautifulSoup
 
-
-page = "https://www.last.fm/music/Audioslave/+tracks?date_preset=ALL#top-tracks"
+Arist = ""
+page = "https://www.last.fm/music/" + Arist + "/+tracks?date_preset=ALL#top-tracks"
 response = requests.get(page)
 AristPage = BeautifulSoup(response.text, "html.parser")
 
