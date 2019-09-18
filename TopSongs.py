@@ -15,5 +15,11 @@ for td in AristPage.findAll('td', {'class': 'chartlist-name'}):
 	for a in td.findAll('a'):
 		songs.append(str((a['title'])))
 
-print(songs)
-print(len(songs))
+#textToSearch = 'hello world'
+#query = urllib.parse.quote(textToSearch)
+#url = "https://www.youtube.com/results?search_query=" + query
+#response = urllib.request.urlopen(url)
+#html = response.read()
+#soup = BeautifulSoup(html, 'html.parser')
+#for vid in soup.findAll(attrs={'class':'yt-uix-tile-link'}):
+    #print('https://www.youtube.com' + vid['href'])
